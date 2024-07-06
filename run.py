@@ -26,9 +26,9 @@ def init():
         ngetik('type aili --setup to install module\nafter all module installed type aili --run\n\n# Version beta_0.0.1\ntype exit/quit to exit\n\n\n')
         perintahnyacok = input('(init/)~$ ')
         if perintahnyacok == 'aili --setup':
-            os.system('pip install google-generativeai colorama pycryptodome')
+            os.system('pip install -r install.txt')
         elif perintahnyacok == 'aili --run':
-            os.system('python aichat.py')
+            os.system('python main.py')
         elif perintahnyacok == 'exit':
             ngetik('exit . . .')
             break
